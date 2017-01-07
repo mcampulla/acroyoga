@@ -1,41 +1,8 @@
 ﻿<!-- Full Page Image Background Carousel Header -->
-<header id="myCarousel" class="carousel slide">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-    </ol>
-    <!-- Wrapper for Slides -->
-    <div class="carousel-inner">
-        <div class="item active">
-            <!-- Set the first background image using inline CSS below. -->
-            <div class="fill" style="background-image:url('/Content/images/main5.jpg');"></div>
-
-            <div class="out">
-                <img src="~/Content/images/logo-home-black1.png" class="img-responsive">
-            </div>
-        </div>
-        <div class="item">
-            <div class="fill" style="background-image:url('/Content/images/main11.jpg');"></div>
-            <div class="out">
-                <img src="~/Content/images/logo-home-black1.png" class="img-responsive">
-            </div>
-        </div>
-        <div class="item">
-            <div class="fill" style="background-image:url('/Content/images/main7.jpg');"></div>
-            <div class="out">
-                <img src="~/Content/images/logo-home-black1.png" class="img-responsive">
-            </div>
-        </div>
+<header>
+    <div class="rwd-video1 padding_video">
+        <iframe src="//www.youtube.com/embed/Wnlr00bytN8?wmode=transparent&autoplay=1&loop=1&controls=0&showinfo=0&playlist=Wnlr00bytN8" allowfullscreen="" frameborder="0" width="16px" height="9px"></iframe>
     </div>
-    <!-- Controls -->
-    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-        <span class="icon-prev"></span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" data-slide="next">
-        <span class="icon-next"></span>
-    </a>
 </header>
 
 <!--About Section-->
@@ -75,42 +42,46 @@
                     <div class="team-item nf-col-padding">
                         <div class="team-item-img">
                             <img src="~/Content/images/laura3.jpg" alt="" />
-                            <div class="team-item-detail">
-                                <div class="team-item-detail-inner light-color">
-                                    <h5>Laura SILVESTRI</h5>
-                                    <p>Similique sunt culpa qui officia deserunt mollitia animi dolorum fuga.</p>
-                                    <ul class="social">
-                                        <li><a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                                        <li><a href="https://www.twitter.com/" target="_blank"><i class="fa fa-mail-forward"></i></a></li>
-                                    </ul>
+                            <a href="@Url.Action("laura")">
+                                <div class="team-item-detail">
+                                    <div class="team-item-detail-inner light-color">
+                                        <h5>Laura SILVESTRI</h5>
+                                        <p>Quando camminerete sulla terra dopo aver volato, guarderete il cielo perché là  siete stati e là  vorrete tornare</p>
+                                        @*<ul class="social">
+                                                <li><a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                                                <li><a href="https://www.twitter.com/" target="_blank"><i class="fa fa-mail-forward"></i></a></li>
+                                            </ul>*@
+                                    </div>
                                 </div>
-                            </div>
+                            </a>
                         </div>
                         <div class="team-item-info">
-                            <a href="@Url.Action("laura")"><h5>Laura Silvestri</h5></a>
+                            <a class="navbar-brand" href="@Url.Action("laura")"><h5>Laura Silvestri</h5></a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 item">
                     <div class="team-item nf-col-padding">
                         <div class="team-item-img">
-                            <img src="http://placehold.it/325x383" alt="" />
-                            <div class="team-item-detail">
-                                <div class="team-item-detail-inner light-color">
-                                    <h5>Guido LAZZARO</h5>
-                                    <p>Similique sunt culpa qui officia deserunt mollitia animi dolorum fuga.</p>
-                                    <ul class="social">
-                                        <li><a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                                        <li><a href="https://www.twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                                        <li><a href="https://www.dribbble.com/" target="_blank"><i class="fa fa-dribbble"></i></a></li>
-                                        <li><a href="https://www.pinterest.com/" target="_blank"><i class="fa fa-pinterest"></i></a></li>
-                                        <li><a href="https://www.behance.net/" target="_blank"><i class="fa fa-behance"></i></a></li>
-                                    </ul>
+                            <img src="~/Content/images/guido1.jpg" alt="" />
+                            <a href="@Url.Action("guido")">
+                                <div class="team-item-detail">
+                                    <div class="team-item-detail-inner light-color">
+                                        <h5>Guido LAZZARO</h5>
+                                        <p>Mettersi in discussione, staccare i piedi da terra, gravitare nello spazio senza punti di riferimento ed aspettare che tutto accada</p>
+                                        @*<ul class="social">
+                                                <li><a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                                                <li><a href="https://www.twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                                                <li><a href="https://www.dribbble.com/" target="_blank"><i class="fa fa-dribbble"></i></a></li>
+                                                <li><a href="https://www.pinterest.com/" target="_blank"><i class="fa fa-pinterest"></i></a></li>
+                                                <li><a href="https://www.behance.net/" target="_blank"><i class="fa fa-behance"></i></a></li>
+                                            </ul>*@
+                                    </div>
                                 </div>
-                            </div>
+                            </a>
                         </div>
                         <div class="team-item-info">
-                            <h5>Guido lazzaro</h5>
+                            <a href="@Url.Action("guido")"><h5>Guido lazzaro</h5></a>
                         </div>
                     </div>
                 </div>
@@ -150,23 +121,87 @@
 </section>
 <!-- End Service Section -->
 <!-- Statement Section -->
-<section id="statement" class="bg-img19 overlay-dark80 dark-bg ptb ptb-sm-80">
-    <div class="container text-center">
+@*<section id="statement" class="bg-img19 overlay-dark80 dark-bg ptb ptb-sm-80">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <a href="http://www.youtube.com/embed/VOJyrQa_WR4?rel=0&amp;wmode=transparent" style="
+                       color #fff;
+                       font-size 48px;
+                       margin-bottom 30px">
+                        <span class="glyphicon glyphicon-film" aria-hidden="true"></span>
+                    </a>
+                    <h4>Pellentesque eu pretium quis adipiscing sem neque sem Nulla consequat massa quis enim?</h4>
+                    <div class="spacer-15"></div>
+                    <a class="cbox-iframe btn btn-md btn-white" href="http://www.youtube.com/embed/VOJyrQa_WR4?rel=0&amp;wmode=transparent">Watch Video</a>
+                </div>
+            </div>
+        </div>
+    </section>*@
+
+<!-- Work Section -->
+<section id="work" class="gray-bg dark-bg ptb-sm-80 text-center">
+    <div class="spacer-60"></div>
+    <div class="container">
+        <a href="@Url.Action("gallery")"><h3>Galleria</h3></a>
+    </div>
+    <!-- Work Gallary -->
+    <div class="container gallery">
         <div class="row">
-            <div class="col-md-8 col-md-offset-2">
-                <a href="http://www.youtube.com/embed/VOJyrQa_WR4?rel=0&amp;wmode=transparent" style="
-                   color #fff;
-                   font-size 48px;
-                   margin-bottom 30px">
-                    <span class="glyphicon glyphicon-film" aria-hidden="true"></span>
-                </a>
-                <h4>Pellentesque eu pretium quis adipiscing sem neque sem Nulla consequat massa quis enim?</h4>
-                <div class="spacer-15"></div>
-                <a class="cbox-iframe btn btn-md btn-white" href="http://www.youtube.com/embed/VOJyrQa_WR4?rel=0&amp;wmode=transparent">Watch Video</a>
+            <div class="owl-item team-carousel nf-carousel-theme">
+                <div class="col-md-4 item">
+                    <div class="team-item nf-col-padding">
+                        <div class="team-item-img">
+                            <img src="~/Content/images/small/main5.jpg" alt="" class="img-responsive" />
+                            <a href="~/Content/images/main5.jpg" rel="group1" class="group">
+                                <div class="team-item-detail">
+                                    <div class="team-item-detail-inner light-color">
+                                        <h5>ACROYOGA PADOVA</h5>
+                                        <p></p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-4 item">
+                    <div class="team-item nf-col-padding">
+                        <div class="team-item-img">
+                            <img src="~/Content/images/small/main7.jpg" alt="" class="img-responsive" />
+                            <a href="~/Content/images/main7.jpg" rel="group1" class="group">
+                                <div class="team-item-detail">
+                                    <div class="team-item-detail-inner light-color">
+                                        <h5>ACROYOGA PADOVA</h5>
+                                        <p></p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 item">
+                    <div class="team-item nf-col-padding">
+                        <div class="team-item-img">
+                            <img src="~/Content/images/small/main11.jpg" alt="" class="img-responsive" />
+                            <a href="~/Content/images/main11.jpg" rel="group1" class="group">
+                                <div class="team-item-detail">
+                                    <div class="team-item-detail-inner light-color">
+                                        <h5>ACROYOGA PADOVA</h5>
+                                        <p></p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+    <div class="spacer-60"></div>
+    <!-- End Work Gallary -->
 </section>
+<!-- End Work Section -->
 <!-- End Statement Section -->
 <!-- Pricing Section -->
 <section id="eventi-info" class="ptb ptb-sm-80">
@@ -241,7 +276,7 @@
         <div class="row">
             <div class="col-md-6 col-md-offset-3">
                 <!-- Contact FORM -->
-                @using (Html.BeginForm("Index", "Home", FormMethod.Post, new { @class="contact-form" }))
+                @using (Html.BeginForm("Index", "Home", FormMethod.Post, new { @class = "contact-form" }))
                 {
 
                     <!-- IF MAIL SENT SUCCESSFULLY -->
@@ -250,23 +285,23 @@
                     </h6>
                     <!-- END IF MAIL SENT SUCCESSFULLY -->
                     <!-- MAIL SENDING UNSUCCESSFULL -->
-                    <h6 class="errorContent">
-                        <i class="fa fa-exclamation-circle left" style="color: #e1534f;"></i>There was a problem validating the form please check!
-                    </h6>
+                        <h6 class="errorContent">
+                            <i class="fa fa-exclamation-circle left" style="color: #e1534f;"></i>There was a problem validating the form please check!
+                        </h6>
                     <!-- END MAIL SENDING UNSUCCESSFULL -->
-                    <div class="form-field-wrapper">
-                        <input class="input-sm form-full" id="form-name" type="text" name="form-name" placeholder="Your Name" required>
-                    </div>
-                    <div class="form-field-wrapper">
-                        <input class="input-sm form-full" id="form-email" type="email" name="form-email" placeholder="Email" required>
-                    </div>
-                    <div class="form-field-wrapper">
-                        <input class="input-sm form-full" id="form-subject" type="text" name="form-subject" placeholder="Subject">
-                    </div>
-                    <div class="form-field-wrapper">
-                        <textarea class="form-full" id="form-message" rows="7" name="form-message" placeholder="Your Message" required></textarea>
-                    </div>
-                    <button class="btn btn-md btn-black form-full" type="submit" id="form-submit" name="submit">Invia Messaggio</button>
+                        <div class="form-field-wrapper">
+                            <input class="input-sm form-full" id="form-name" type="text" name="form-name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-field-wrapper">
+                            <input class="input-sm form-full" id="form-email" type="email" name="form-email" placeholder="Email" required>
+                        </div>
+                        <div class="form-field-wrapper">
+                            <input class="input-sm form-full" id="form-subject" type="text" name="form-subject" placeholder="Subject">
+                        </div>
+                        <div class="form-field-wrapper">
+                            <textarea class="form-full" id="form-message" rows="7" name="form-message" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button class="btn btn-md btn-black form-full" type="submit" id="form-submit" name="submit">Invia Messaggio</button>
                 }
                 <!-- END Contact FORM -->
             </div>

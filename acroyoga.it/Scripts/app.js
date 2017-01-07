@@ -7,17 +7,17 @@ $('#myCarousel').on('slid.bs.carousel', function (options) {
     $(".item:not(.active) .out").removeClass("in");
     $(".item.active .out").addClass("in");
     //$(".out").toggleClass("in");
-    console.log("slid");
+    //console.log("slid");
 })
 
 $(function () {
     $(".item.active .out").addClass("in");
 
-    $('nav a').bind('click', function () {
+    $('.nav-scroll').bind('click', function () {
         $('html, body').stop().animate({
             scrollTop: $($(this).attr('href')).offset().top - 40
         }, 1500, 'easeInOutExpo');
-        console.log("click")
+        //console.log("click")
         event.preventDefault();
     });
 
@@ -27,6 +27,50 @@ $(function () {
             setTimeout(scrollPage, 250)
         }
     }, false);
+
+    /* This is basic - uses default settings */
+
+    $("a.group").fancybox({
+        'transitionIn': 'elastic',
+        'transitionOut': 'elastic',
+        'speedIn': 600,
+        'speedOut': 200,
+        'overlayShow': false
+    });
+
+
+    var $allVideos = $("iframe[src^='//www.youtube.com']"),
+
+    // The element that is fluid width
+    $fluidEl = $(".rwd-video1");
+
+    // Figure out and save aspect ratio for each video
+    $allVideos.each(function () {
+        $(this)
+          .data('aspectRatio', this.height / this.width)
+          // and remove the hard coded width/height
+          .removeAttr('height')
+          .removeAttr('width');
+    });
+
+
+    // When the window is resized
+    $(window).resize(function () {
+        var newWidth = $fluidEl.width();
+
+        // Resize all videos according to their own aspect ratio
+        $allVideos.each(function () {
+
+            var $el = $(this);
+            $el
+              .width(newWidth)
+              .height(newWidth * 0.5625);
+
+        });
+
+        // Kick off one resize to fix all videos on page load
+    }).resize();
+
 });
 
 didScroll = false;
@@ -39,6 +83,10 @@ function scrollPage() {
     } else {
         $('.navbar').removeClass("navbar-shrink");
     }
-
     didScroll = false;
 }
+
+// Find all YouTube videos
+$(document).ready(function () {
+    
+});

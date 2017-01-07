@@ -63,7 +63,6 @@ body {
     line-height: 1.6;
     padding: 0;
     margin: 0;
-	
 }
 
 #page-wraper .wrapper {
@@ -234,7 +233,7 @@ a {
 }
 
     a:hover {
-        color: #c7a674;
+        color: #17acd2;
     }
 
 i.left, .i-left {
@@ -306,7 +305,7 @@ h6 {
     }
 
     h1.color, h2.color, h3.color, h4.color, h5.color, h6.color, h6 .color {
-        color: #c7a674;
+        color: #17acd2;
     }
 
 
@@ -322,7 +321,7 @@ h6 {
 
 .page-title-alt {
     margin-bottom: 30px;
-    color: #c7a674;
+    color: #17acd2;
 }
 
 .content-title {
@@ -393,7 +392,7 @@ p {
         }
 
         p.color p.small.color, p.large.color, p.lead.color, p .color, .color {
-            color: #c7a674;
+            color: #17acd2;
         }
 
 /* listing */
@@ -415,6 +414,14 @@ ul.list-none {
 }
 
     .dark-bg a:hover {
+        color:white;
+    }
+
+.gray-bg a {
+}
+
+    .gray-bg a:hover {
+        color:white;
     }
 
 a {
@@ -443,7 +450,7 @@ a {
 }
 
     .Link:hover {
-        color: #c7a674;
+        color: #17acd2;
     }
 
 .link-d {
@@ -451,7 +458,7 @@ a {
 }
 
     .link-d:hover {
-        color: #c7a674;
+        color: #17acd2;
     }
 
 
@@ -510,13 +517,13 @@ i.right {
 }
 
     .btn-black:hover {
-        background-color: #c7a674;
+        background-color: #17acd2;
         border-color: transparent;
         color: #fff;
     }
 
 .btn-color {
-    background-color: #c7a674;
+    background-color: #17acd2;
     border-color: transparent;
     color: #fff;
 }
@@ -1722,7 +1729,7 @@ form label.error {
     top: 0px;
     z-index: 1000;
     color: #fff;
-    width: 100%;
+    /*width: 100%;*/
     height: 99px;
     transition: background-color 200ms ease-in-out 0s;
     -o-transition: background-color 200ms ease-in-out 0s;
@@ -1860,7 +1867,7 @@ form label.error {
         .nav-menu ul.nav-menu-inner li a:hover,
         .header-fixed .nav-menu ul.nav-menu-inner li a.current,
         .header-fixed .nav-menu ul.nav-menu-inner li.current a {
-            color: #c7a674;
+            color: #17acd2;
         }
 
 @media all and (max-width: 1024px) {
@@ -2019,7 +2026,7 @@ form label.error {
 /*Icon Style 1*/
 
 .content-box:hover .icon-top, .content-box:hover .icon-left, .content-box:hover .icon-right {
-    background-color: #c7a674;
+    background-color: #17acd2;
     color: #fff;
 }
 
@@ -2056,7 +2063,7 @@ form label.error {
 }
 
 .icon-color {
-    background-color: #c7a674;
+    background-color: #17acd2;
     color: #fff;
 }
 
@@ -2071,7 +2078,7 @@ form label.error {
 }
 
 .content-box:hover .icon-black {
-    background-color: #c7a674;
+    background-color: #17acd2;
     color: #fff;
 }
 
@@ -2262,7 +2269,7 @@ o-flow-hidden {
         .nf-carousel-theme .owl-controls .owl-buttons .owl-prev:hover,
         .nf-carousel-theme .owl-controls .owl-buttons .owl-next:hover {
             /*background: #fff;*/
-            color: #c7a674;
+            color: #17acd2;
         }
 
     .content-carousel .owl-controls .owl-buttons .owl-next,
@@ -2510,7 +2517,7 @@ ul.portfolio-btn-wraper, .portfolio-btn-wraper {
         }
 
             .portfolio-filter li a.active {
-                color: #c7a674;
+                color: #17acd2;
             }
 
 /*-------------------------------------------------------------------------------------------*/
@@ -2578,7 +2585,7 @@ ul.portfolio-btn-wraper, .portfolio-btn-wraper {
             }
 
                 .team-item-img .team-item-detail .team-item-detail-inner .social li a:hover {
-                    color: #c7a674;
+                    color: #17acd2;
                 }
 
 .team-item-info {
@@ -2958,7 +2965,7 @@ h1, h2, h3, h4, h5, h6 {
 		
 }
     .pricing-box.highlight {
-        border-top-color: #c7a674;
+        border-top-color: #17acd2;
     }
 	
 	.Pricing-box.highlight {
@@ -3174,8 +3181,8 @@ h1, h2, h3, h4, h5, h6 {
         }
 
         .footer .social li:hover a {
-            border-color: #c7a674;
-            color: #c7a674;
+            border-color: #17acd2;
+            color: #17acd2;
         }
 
 		
@@ -3223,11 +3230,19 @@ h1, h2, h3, h4, h5, h6 {
 	}*/
 	
 .bg-img19 {
-    background-image: url(/Content/Images/main1.jpg);
+    background-image: url(/Content/Images/main14.jpg);
 }
 
 .bg-img20 {
     background-image: url(/Content/images/main7.jpg);
+}
+
+.bg-img21 {
+    background-image: url(/Content/images/laura_i5.jpg);
+}
+
+.bg-img22 {
+    background-image: url(/Content/images/guido_i2.jpg);
 }
 
 
