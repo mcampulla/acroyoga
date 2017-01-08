@@ -1,0 +1,43 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.Linq;
+using System.Web;
+
+namespace acroyoga.it.admin.Models
+{
+    public class Event
+    {
+        [Key]
+        public int EventId { get; set; }
+
+        [Required]
+        public String Title { get; set; }
+
+        [Required]
+        public String Description { get; set; }
+
+        [Required]
+        public String Body { get; set; }
+
+        [DataType("Image")]
+        public string ImageLeft { get; set; }
+
+        [DataType("Image")]
+        public string ImageRight { get; set; }
+
+        [DataType("Video")]
+        public string Video { get; set; }
+
+        [DataType("Date")]
+        public DateTime? DataInizio { get; set; }
+
+        [DataType("Date")]
+        public DateTime? DataFine { get; set; }
+
+        public bool IsActive { get; set; }
+
+        [DataType("Date")]
+        public DateTime CreateDate { get; set; }      
+    }
+}

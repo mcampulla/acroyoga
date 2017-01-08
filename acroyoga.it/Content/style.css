@@ -3204,7 +3204,7 @@ h1, h2, h3, h4, h5, h6 {
 	.in {
 		opacity:1;
 		top: 200px;
-		transform: scale(1.2, 1);
+		/*transform: scale(1.2, 1);*/
 	}
 	
 	.navbar {

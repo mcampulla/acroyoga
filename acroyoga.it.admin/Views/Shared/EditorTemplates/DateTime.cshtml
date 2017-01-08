@@ -1,0 +1,8 @@
+@model DateTime?
+
+<div class="input-group">
+    @Html.TextBox("", Model, new { @class = "form-control datepicker" })
+    <label for="@((ViewData.ModelMetadata).PropertyName)" class="input-group-addon">
+        <span class="glyphicon glyphicon-calendar"></span>
+    </label>
+</div>

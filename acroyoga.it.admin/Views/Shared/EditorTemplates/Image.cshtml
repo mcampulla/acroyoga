@@ -1,0 +1,24 @@
+﻿@model string
+
+<div>
+    @{
+    string propertyName = (ViewData.ModelMetadata).PropertyName;
+    }
+    <div id="div_@(propertyName)">@Model</div>
+    <br />
+    <span class="btn btn-success fileremove-button" onclick="removeFile('@(propertyName)');">
+        Elimina...
+    </span>
+    <span class="btn btn-success fileinput-button">
+        <i class="glyphicon glyphicon-plus"></i>
+        <span>Carica...</span>
+        <!-- The file input field used as target for the file upload widget -->
+        <input id="fileupload_@(propertyName)" class="fileupload" type="file" name="files[]" multiple data-id="@(propertyName)">
+    </span>
+    <br />
+    <!-- The global progress bar -->
+    <div id="progress_@(propertyName)" class="progress">
+        <div class="progress-bar progress-bar-success"></div>
+    </div>
+    @Html.Hidden(string.Empty, Model)
+</div>
