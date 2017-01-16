@@ -204,6 +204,29 @@
 <!-- End Work Section -->
 <!-- End Statement Section -->
 <!-- Pricing Section -->
+
+<section id="eventi-info" class="ptb ptb-sm-80" ng-show="ShowEvents">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-4">
+                        <img ng-src="http://acroyoga.azurewebsites.net{{currentEvent.ImageLeft}}" alt="" class="img-responsive" />
+                    </div>
+                    <div class="col-md-8">
+                        <h3>{{currentEvent.Title}}</h3><p>
+                        {{currentEvent.Description}}
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row" ng-repeat="event in events">
+            <button ng-click="changeEvent($index)" >{{$index}}</button> 
+        </div>
+    </div>
+</section>
+
 <section id="eventi-info" class="ptb ptb-sm-80">
     <div class="container ">
         <div class="row">
@@ -244,27 +267,6 @@
     </div>
 </section>
 
-<section class="bg-img20 overlay-dark80 dark-bg ptb ptb-sm-80">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2">
-                <h4>Vuoi organizzare un workshop di Acro Yoga nella tua palestra?</h4>
-                <div class="spacer-15"></div>
-                <p>
-                    Ecco un programma “tipo” per un workshop di circa 3 ore e mezza
-                    <ul>
-                        <li>Riscaldamento di circa 30-40 minuti di yoga (secondo l'approccio Anukalana)</li>
-                        <li> Introduzione alla pratica secondo il livello richiesto con breve dimostrazione</li>
-                        <li> Costruzione di una o più sequenze di Acro Yoga Anukalana inspired</li>
-                        <li> Pratica di volo terapeutico e breve thai massage</li>
-                        <li> Chiusura della pratica con cerchio di condivisione </li>
-                    </ul>
-                </p>
-            </div>
-        </div>
-    </div>
-</section>
-
 <section id="contact-us" class="ptb ptb-sm-80">
     <div class="container">
         <div class="row">
@@ -285,23 +287,23 @@
                     </h6>
                     <!-- END IF MAIL SENT SUCCESSFULLY -->
                     <!-- MAIL SENDING UNSUCCESSFULL -->
-                        <h6 class="errorContent">
-                            <i class="fa fa-exclamation-circle left" style="color: #e1534f;"></i>There was a problem validating the form please check!
-                        </h6>
+                                <h6 class="errorContent">
+                                    <i class="fa fa-exclamation-circle left" style="color: #e1534f;"></i>There was a problem validating the form please check!
+                                </h6>
                     <!-- END MAIL SENDING UNSUCCESSFULL -->
-                        <div class="form-field-wrapper">
-                            <input class="input-sm form-full" id="form-name" type="text" name="form-name" placeholder="Your Name" required>
-                        </div>
-                        <div class="form-field-wrapper">
-                            <input class="input-sm form-full" id="form-email" type="email" name="form-email" placeholder="Email" required>
-                        </div>
-                        <div class="form-field-wrapper">
-                            <input class="input-sm form-full" id="form-subject" type="text" name="form-subject" placeholder="Subject">
-                        </div>
-                        <div class="form-field-wrapper">
-                            <textarea class="form-full" id="form-message" rows="7" name="form-message" placeholder="Your Message" required></textarea>
-                        </div>
-                        <button class="btn btn-md btn-black form-full" type="submit" id="form-submit" name="submit">Invia Messaggio</button>
+                                <div class="form-field-wrapper">
+                                    <input class="input-sm form-full" id="form-name" type="text" name="form-name" placeholder="Your Name" required>
+                                </div>
+                                <div class="form-field-wrapper">
+                                    <input class="input-sm form-full" id="form-email" type="email" name="form-email" placeholder="Email" required>
+                                </div>
+                                <div class="form-field-wrapper">
+                                    <input class="input-sm form-full" id="form-subject" type="text" name="form-subject" placeholder="Subject">
+                                </div>
+                                <div class="form-field-wrapper">
+                                    <textarea class="form-full" id="form-message" rows="7" name="form-message" placeholder="Your Message" required></textarea>
+                                </div>
+                                <button class="btn btn-md btn-black form-full" type="submit" id="form-submit" name="submit">Invia Messaggio</button>
                 }
                 <!-- END Contact FORM -->
             </div>
