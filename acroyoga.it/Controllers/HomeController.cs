@@ -35,9 +35,12 @@ namespace acroyoga.it.Controllers
             return View();
         }
 
-        public ActionResult Event()
+        public ActionResult Event(int? id)
         {
-            return View();
+            if (id.HasValue)
+                return View(id);
+            else
+                return RedirectToAction("/");
         }
 
         public ActionResult Gallery()

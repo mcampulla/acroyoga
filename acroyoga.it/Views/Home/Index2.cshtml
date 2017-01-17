@@ -211,23 +211,28 @@
             <div class="col-md-12">
                 <div class="row">
                     <div class="col-md-4">
-                        <img ng-src="http://acroyoga.azurewebsites.net{{currentEvent.ImageLeft}}" alt="" class="img-responsive" />
+                        <img ng-src="{{getImageUrl(currentEvent.ImageLeft)}}" alt="" class="img-responsive" />
                     </div>
                     <div class="col-md-8">
-                        <h3>{{currentEvent.Title}}</h3><p>
-                        {{currentEvent.Description}}
+                        <h3>{{currentEvent.Title}}</h3>
+                        <p ng-bind-html="description"></p>
+                        <p>
+                            <a ng-click="gotoEvent(currentEvent.EventId)" class="btn btn-md btn-black">leggi</a>
                         </p>
                     </div>
+                    
                 </div>
             </div>
         </div>
-        <div class="row" ng-repeat="event in events">
-            <button ng-click="changeEvent($index)" >{{$index}}</button> 
+        <div style="text-align:right">
+            <span ng-repeat="event in events">
+                <a ng-click="changeEvent($index)" class="btn btn-paging btn-black" >{{$index+1}}</a> 
+            </span>
         </div>
     </div>
 </section>
 
-<section id="eventi-info" class="ptb ptb-sm-80">
+@*<section id="eventi-info" class="ptb ptb-sm-80">
     <div class="container ">
         <div class="row">
             <div class="col-md-12">
@@ -265,7 +270,7 @@
             </div>
         </div>
     </div>
-</section>
+</section>*@
 
 <section id="contact-us" class="ptb ptb-sm-80">
     <div class="container">

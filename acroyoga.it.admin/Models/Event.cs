@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Web;
 
@@ -18,6 +19,8 @@ namespace acroyoga.it.admin.Models
         public String Description { get; set; }
 
         [Required]
+        [Column(TypeName = "ntext")]
+        [MaxLength]
         public String Body { get; set; }
 
         [DataType("Image")]

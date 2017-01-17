@@ -37,7 +37,7 @@ namespace acroyoga.it.admin.Controllers
             return View(model);
         }
 
-        [HttpPost]
+        [HttpPost, ValidateInput(false)]
         public ActionResult EventDetail(Event model)
         {
             try

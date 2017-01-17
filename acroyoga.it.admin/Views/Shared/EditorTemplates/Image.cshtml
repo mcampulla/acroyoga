@@ -4,7 +4,7 @@
     @{
     string propertyName = (ViewData.ModelMetadata).PropertyName;
     }
-    <div id="div_@(propertyName)">@Model</div>
+    <div id="div_@(propertyName)">@Model</div><img id="img_@(propertyName)" src="@Model" class="img-responsive" />
     <br />
     <span class="btn btn-success fileremove-button" onclick="removeFile('@(propertyName)');">
         Elimina...
