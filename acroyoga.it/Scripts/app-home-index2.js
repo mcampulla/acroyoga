@@ -20,7 +20,7 @@ app.controller('Index2Controller', function ($scope, $http, $sce) {
         $scope.description = $sce.trustAsHtml($scope.currentEvent.Description);
         $scope.body = $sce.trustAsHtml($scope.currentEvent.Body);
 
-        setInterval(function () { slide($scope.index) }, 5000);
+        //setInterval(function () { slide($scope.index) }, 5000);
 
         $scope.ShowEvents = true;
     }, function () { // failure
