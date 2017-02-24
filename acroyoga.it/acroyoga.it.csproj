@@ -144,6 +144,8 @@
     <Content Include="Content\Images\logo-home-black2.png" />
     <Content Include="Content\Images\logo-home.png" />
     <Content Include="Content\Images\logo-top.png" />
+    <Content Include="Content\Images\logo-top1.png" />
+    <Content Include="Content\Images\logo.png" />
     <Content Include="Content\Images\main1.jpg" />
     <Content Include="Content\Images\main11.jpg" />
     <Content Include="Content\Images\main12.jpg" />
