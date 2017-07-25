@@ -3239,19 +3239,23 @@ h1, h2, h3, h4, h5, h6 {
 	}*/
 	
 .bg-img19 {
-    background-image: url(/Content/Images/main14.jpg);
+    background-image: url(/Content/Images/home/main-0007.jpg);
 }
 
 .bg-img20 {
-    background-image: url(/Content/images/main7.jpg);
+    background-image: url(/Content/images/home/main-0014.jpg);
 }
 
 .bg-img21 {
-    background-image: url(/Content/images/laura_i5.jpg);
+    background-image: url(/Content/images/laura/laura-0005.jpg);
 }
 
 .bg-img22 {
-    background-image: url(/Content/images/guido_i2.jpg);
+    background-image: url(/Content/images/guido/guido-0002.jpg);
+}
+
+.bg-img23 {
+    background-image: url(/Content/images/yoga/yoga-0004.jpg);
 }
 
 

@@ -25,6 +25,11 @@ namespace acroyoga.it.Controllers
             return View();
         }
 
+        public ActionResult Yoga()
+        {
+            return View();
+        }
+
         public ActionResult Laura()
         {
             return View();
