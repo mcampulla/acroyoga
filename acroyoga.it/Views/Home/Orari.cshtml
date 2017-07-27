@@ -1,0 +1,178 @@
+﻿@{
+    Layout = "~/Views/Shared/_LayoutInner.cshtml";
+}
+<div class="spacer-60"></div>
+<section id="team" class="wow fadeIn ptb ptb-sm-80">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <h3 class="h4">ACROYOGA</h3>
+                <div class="spacer-15"></div>
+                <p class="lead"></p>
+                <p>
+                    <table class="table table-striped table-hover">
+                        <tr><th>Giorno</th><th>Ora</th><th>Luogo</th><th>Note</th></tr>
+                        <tr><td>Lun</td><td>17.30-18.45</td><td>Rubano</td><td>Ragazzi</td></tr>
+                        <tr><td>Mer</td><td>20.00-22.00</td><td>Rubano</td><td>Adulti</td></tr>
+                        <tr><td>Gio</td><td>20.00-22.00</td><td>Padova centro</td><td>Adulti</td></tr>
+                        <tr><td>Ven</td><td>20.00-22.00</td><td>Rubano</td><td>Adulti</td></tr>
+                    </table>
+                </p>
+            </div>
+            <div class="col-md-4">
+                <img src="~/Content/images/home/main-0005.jpg" class="img-responsive">
+            </div>
+        </div>
+        @*<div class="row">
+                <div class="col-md-12" style="background: #e3fdf1;padding: 30px;border-radius: 20px;text-align: justify;margin-top:30px">
+                </div>
+        </div>*@
+    </div>
+</section>
+<section id="team" class="wow fadeIn ptb ptb-sm-80">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <h3 class="h4">YOGA</h3>
+                <div class="spacer-15"></div>
+                <p class="lead"></p>
+                <p>
+                    <table class="table table-striped table-hover">
+                        <tr><th>Giorno</th><th>Ora</th><th>Luogo</th><th>Note</th></tr>
+                        <tr><td>Lun</td><td>19.00-20.15</td><td>Rubano</td><td></td></tr>
+                        <tr><td>Mar</td><td>20.10-21.30</td><td>Abano Terme</td><td></td></tr>
+                        <tr><td>Mer</td><td>13.30-14.45<br />18.30-19.45</td><td>Rubano</td><td></td></tr>
+                        <tr><td>Gio</td><td>20.10-21.30</td><td>Abano Terme</td><td>Da confermare</td></tr>
+                        <tr><td>Ven</td><td>13.30-14.45<br />18.30-19.45</td><td>Rubano</td><td></td></tr>
+                    </table>
+                </p>
+            </div>
+            <div class="col-md-4">
+                <img src="~/Content/images/yoga/yoga-0004.jpg" class="img-responsive">
+            </div>
+        </div>
+        @*<div class="row">
+                <div class="col-md-12" style="background: #e3fdf1;padding: 30px;border-radius: 20px;text-align: justify;margin-top:30px">
+                </div>
+        </div>*@
+    </div>
+</section>
+<!-- End About Section-->
+
+<!-- Statement Section -->
+<section id="statement" class="footer section-padding gray-bg">
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-md-12">
+                <h4>Sede di Rubano</h4>
+                <div class="spacer-15"></div>
+                <p class="text-white">Dance Queen  A.S.D. - Via Picca' Grolli 1/2 <span class="glyphicon glyphicon-phone" aria-hidden="true"></span><a href="tel:+393279439737" class="text-white">+39 327 9439737</a> - Zona industriale Rubano (PD) - <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> <a href="mailto:info@dancequeen.it" class="text-white">info@dancequeen.it</a></p>
+            </div>
+        </div>
+    </div>
+</section>
+<div id="maprubano"></div>
+
+<section id="statement" class="footer section-padding gray-bg">
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h4>Sede di Padova</h4>
+                <div class="spacer-15"></div>
+                <p class="text-white">Koreos  A.S.D. - Via Alessandro Prosdocimi 1, (Quartiere Forcellini) Padova - <span class="glyphicon glyphicon-phone" aria-hidden="true"></span><a href="tel:+390498023870" class="text-white">049 8023870</a> - <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> <a href="mailto:forcellini@koreos.it" class="text-white">forcellini@koreos.it</a></p>
+            </div>
+        </div>
+    </div>
+</section>
+<div id="mappadova"></div>
+
+<section id="statement" class="footer section-padding gray-bg">
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h4>Sede di Abano Terme</h4>
+                <div class="spacer-15"></div>
+                <p class="text-white">Pilates Studio 76 A.S.D. - Piazza Sacro Cuore, 31 Abano Terme (PD) - <span class="glyphicon glyphicon-phone" aria-hidden="true"></span><a href="tel:+393392619527" class="text-white">+39 339 2619527</a> - <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> <a href="mailto:info@ps76.it" class="text-white">info@ps76.it</a></p>
+            </div>
+        </div>
+    </div>
+</section>
+<div id="mapabano"></div>
+
+<!-- End Statement Section -->
+
+
+
+@section Scripts {
+    <script>
+
+        // Google Maps Scripts
+        var maprubano = null;
+        var mappadova = null;
+        var mapabano = null;
+
+        // When the window has finished loading create our google map below
+        google.maps.event.addDomListener(window, 'load', init);
+        google.maps.event.addDomListener(window, 'resize', function () {
+            maprubano.setCenter(new google.maps.LatLng(45.420680, 11.797762));
+            mappadova.setCenter(new google.maps.LatLng(45.397459, 11.900127));
+            mapabano.setCenter(new google.maps.LatLng(45.350359, 11.780181));
+        });
+
+        function init() {
+            var mapabanoOptions = {
+                zoom: 16,
+                center: new google.maps.LatLng(45.350359, 11.780181), // New York
+                scrollwheel: false,
+                draggable: false,
+            };
+            var mapabanoElement = document.getElementById('mapabano');
+            mapabano = new google.maps.Map(mapabanoElement, mapabanoOptions);
+
+            //var image = 'content/img/map-marker.png';
+            var myLatLng = new google.maps.LatLng(45.350359, 11.780181);
+            var beachMarker = new google.maps.Marker({
+                position: myLatLng,
+                map: mapabano,
+                //icon: image
+            });
+
+            var maprubanoOptions = {
+                zoom: 16,
+                center: new google.maps.LatLng(45.420680, 11.797762), // New York
+                scrollwheel: false,
+                draggable: false,
+            };
+            var maprubanoElement = document.getElementById('maprubano');
+            maprubano = new google.maps.Map(maprubanoElement, maprubanoOptions);
+
+            //var image = 'content/img/map-marker.png';
+            var myLatLng = new google.maps.LatLng(45.420680, 11.797762);
+            var beachMarker = new google.maps.Marker({
+                position: myLatLng,
+                map: maprubano,
+                //icon: image
+            });
+
+            var mappadovaOptions = {
+                zoom: 16,
+                center: new google.maps.LatLng(45.397459, 11.900127), // New York
+                scrollwheel: false,
+                draggable: false,
+            };
+            var mappadovaElement = document.getElementById('mappadova');
+            mappadova = new google.maps.Map(mappadovaElement, mappadovaOptions);
+
+            //var image = 'content/img/map-marker.png';
+            var myLatLng = new google.maps.LatLng(45.397459, 11.900127);
+            var beachMarker = new google.maps.Marker({
+                position: myLatLng,
+                map: mappadova,
+                //icon: image
+            });
+        }
+
+       
+    
+    </script>
+}

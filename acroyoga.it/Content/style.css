@@ -3332,3 +3332,27 @@ div.overlay > div {
     vertical-align:    middle;
     z-index: 1001;
 }
+
+#maprubano, #mappadova, #mapabano {
+  width: 100%;
+  height: 200px;
+  margin: 0 0 50px 0;
+}
+@media (min-width: 767px) {
+  #maprubano, #mappadova, #mapabano {
+    height: 400px;
+    margin: 0 0 50px 0;
+  }
+}
+
+.text-white {
+    color: #fff;
+}
+
+a.text-white, a.text-white:visited, a.text-white:link {
+    color: #fff;
+}
+
+a.text-white:hover   {
+    color: #323232;
+}

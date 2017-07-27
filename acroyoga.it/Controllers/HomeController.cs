@@ -48,6 +48,11 @@ namespace acroyoga.it.Controllers
                 return RedirectToAction("/");
         }
 
+        public ActionResult Orari()
+        {
+            return View();
+        }
+
         public ActionResult Gallery()
         {
             return View();
