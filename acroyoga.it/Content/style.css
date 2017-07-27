@@ -3223,7 +3223,7 @@ h1, h2, h3, h4, h5, h6 {
 		background-color: transparent;
 		border-color: transparent;
 		transition: all 1s;
-		background-color: rgba(0, 0, 0, 0.30);
+		background-color: rgba(0, 0, 0, 0.80);
 	}
 	
 	.navbar-inverse .navbar-nav>li>a, navbar-brand{
@@ -3255,7 +3255,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .bg-img23 {
-    background-image: url(/Content/images/yoga/yoga-0004.jpg);
+    background-image: url(/Content/images/yoga/yoga-0004-small.jpg);
+}
+
+.bg-orologio {
+    background-image: url(/Content/images/orologio-yoga-small.jpg);
 }
 
 
@@ -3349,10 +3353,18 @@ div.overlay > div {
     color: #fff;
 }
 
+.text-dark {
+    color: #323232;
+}
+
 a.text-white, a.text-white:visited, a.text-white:link {
     color: #fff;
 }
 
 a.text-white:hover   {
     color: #323232;
+}
+
+.bg-transparent40 {
+    background-color: rgba(0,0,0,0.4);
 }

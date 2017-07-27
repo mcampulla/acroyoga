@@ -201,6 +201,7 @@
     <Content Include="Content\Images\laura\laura-0014.jpg" />
     <Content Include="Content\Images\laura\laura-0015.jpg" />
     <Content Include="Content\Images\laura\laura-0016.jpg" />
+    <Content Include="Content\Images\orologio-yoga-small.jpg" />
     <Content Include="Content\Images\yoga\Glifo-Loto-6_425.png" />
     <Content Include="Content\Images\logo-home-black.png" />
     <Content Include="Content\Images\logo-home-black1.png" />
@@ -225,6 +226,7 @@
     <Content Include="Content\jquery.fancybox-thumbs.css" />
     <Content Include="Content\jquery.fancybox.css" />
     <Content Include="Content\linea_icon_font.css" />
+    <Content Include="Content\Images\orologio-yoga.jpg" />
     <Content Include="Content\plugins\jquery.fs.tipper.css" />
     <Content Include="Content\plugins\magnific-popup.css" />
     <Content Include="Content\plugins\owl.carousel.css" />
