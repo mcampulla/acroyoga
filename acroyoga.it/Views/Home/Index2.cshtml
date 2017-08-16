@@ -269,7 +269,7 @@
         <div class="row">
             <div class="col-md-6 col-md-offset-3">
                 <!-- Contact FORM -->
-                @using (Html.BeginForm("Index", "Home", FormMethod.Post, new { @class = "contact-form" }))
+                @using (Html.BeginForm("Index2", "Home", FormMethod.Post, new { @class = "contact-form" }))
                 {
                     <!-- IF MAIL SENT SUCCESSFULLY -->
                     <h6 class="successContent">
@@ -295,6 +295,7 @@
                     </div>
                     <button class="btn btn-md btn-black form-full" type="submit" id="form-submit" name="submit">Invia Messaggio</button>
                 }
+                @( ViewBag.Error )
                 <!-- END Contact FORM -->
             </div>
         </div>

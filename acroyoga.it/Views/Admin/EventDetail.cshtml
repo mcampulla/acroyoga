@@ -121,7 +121,7 @@
                     //$(this).val(data.result.files[0].url);
                     var id = this.id;
                     $("#" + this.id.replace("fileupload", "")).val(data.result.files[0].url);
-                    $("#" + this.id.replace("fileupload", "img")).attr("src", data.result.files[0].url);
+                    $("#" + this.id.replace("fileupload", "img")).attr("src", data.result.files[0].url.replace("~", ""));
                 },
                 progressall: function (e, data) {
                     var progress = parseInt(data.loaded / data.total * 100, 10);
