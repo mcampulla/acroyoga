@@ -1,0 +1,60 @@
+﻿@model acroyoga.it.Models.RegisterModel
+
+@{
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+    ViewBag.Title = "Registrazione";
+}
+
+<h2>Registrazione utente</h2>
+<p>
+    Compilare al form sottostante per registrare un nuovo utente. 
+</p>
+<p>
+    Le passwords devono essere lunghe almeno @Membership.MinRequiredPasswordLength caratteri.
+</p>
+
+
+@using (Html.BeginForm()) {
+    @Html.ValidationSummary(true, "Registrazione fallita. Correggere gli errori e riprovare.")
+    <div>
+        <fieldset>
+            <legend>Informazioni utente</legend>
+
+            <div class="editor-label">
+                @Html.LabelFor(m => m.UserName)
+            </div>
+            <div class="editor-field">
+                @Html.EditorFor(m => m.UserName)
+                @Html.ValidationMessageFor(m => m.UserName)
+            </div>
+
+            <div class="editor-label">
+                @Html.LabelFor(m => m.Email)
+            </div>
+            <div class="editor-field">
+                @Html.EditorFor(m => m.Email)
+                @Html.ValidationMessageFor(m => m.Email)
+            </div>
+
+            <div class="editor-label">
+                @Html.LabelFor(m => m.Password)
+            </div>
+            <div class="editor-field">
+                @Html.PasswordFor(m => m.Password)
+                @Html.ValidationMessageFor(m => m.Password)
+            </div>
+
+            <div class="editor-label">
+                @Html.LabelFor(m => m.ConfirmPassword)
+            </div>
+            <div class="editor-field">
+                @Html.PasswordFor(m => m.ConfirmPassword)
+                @Html.ValidationMessageFor(m => m.ConfirmPassword)
+            </div>
+
+            <p>
+                <input type="submit" value="Register" />
+            </p>
+        </fieldset>
+    </div>
+}

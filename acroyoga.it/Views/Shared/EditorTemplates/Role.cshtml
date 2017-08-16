@@ -1,0 +1,11 @@
+@using acroyoga.it.Models
+
+@model Role
+
+@{
+    
+        @Html.CheckBoxFor(m => Model.IsChecked)
+        @Html.LabelFor(m => Model.IsChecked, Model.Name)
+        @Html.HiddenFor(m => Model.Name)
+        @Html.HiddenFor(m => Model.RoleID)
+}

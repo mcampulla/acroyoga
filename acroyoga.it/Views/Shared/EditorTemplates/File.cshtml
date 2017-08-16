@@ -1,0 +1,53 @@
+﻿@model string
+
+<link href="@Url.Content("~/Content/bootstrap.min.css")" rel="stylesheet"  type="text/css" />
+<link href="@Url.Content("~/Content/jquery.fileupload/css/jquery.fileupload.css")" rel="stylesheet" type="text/css" />
+
+<div style="width: 280px">
+    <span id="url">@Model</span>
+    <br />
+    <span class="btn btn-success fileinput-button">
+        <i class="glyphicon glyphicon-plus"></i>
+        <span>Carica...</span>
+        <!-- The file input field used as target for the file upload widget -->
+        <input id="fileupload" type="file" name="files[]" multiple>
+    </span>
+    <br /><br />
+    <!-- The global progress bar -->
+    <div id="progress" class="progress">
+        <div class="progress-bar progress-bar-success"></div>
+    </div>
+    @Html.Hidden(string.Empty, Model)
+</div>
+
+<script type="text/javascript">
+    $(function () {
+        'use strict';
+        // Change this to the location of your server-side upload handler:
+        var url = '@Url.Action("UploadFile", "Admin")';
+        $('#fileupload').fileupload({
+            url: url,
+            dataType: 'json',
+            done: function (e, data) {
+                $.each(data.result.files, function (index, file) {
+                    //$('<p/>').text(file.name).appendTo('#files');
+                });
+                $("#@((ViewData.ModelMetadata).PropertyName)").val(data.result.files[0].url);
+                $("#url").html(data.result.files[0].url);
+            },
+            progressall: function (e, data) {
+                var progress = parseInt(data.loaded / data.total * 100, 10);
+                $('#progress .progress-bar').css(
+                    'width',
+                    progress + '%'
+                );
+            }
+        }).prop('disabled', !$.support.fileInput)
+            .parent().addClass($.support.fileInput ? undefined : 'disabled');
+    });
+
+    function removeFile() {
+        $("#@((ViewData.ModelMetadata).PropertyName)").val("");
+        $("#img").attr("src", "@Url.Content("~/Content/images/nopicture.jpg")");
+    }
+</script>

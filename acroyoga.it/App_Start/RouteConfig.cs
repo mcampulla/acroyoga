@@ -14,6 +14,12 @@ namespace acroyoga.it
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
             routes.MapRoute(
+                name: "Admin",
+                url: "Admin/{action}/{id}",
+                defaults: new { controller = "Admin", action = "Events", id = UrlParameter.Optional }
+            );
+
+            routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Home", action = "Index2", id = UrlParameter.Optional }

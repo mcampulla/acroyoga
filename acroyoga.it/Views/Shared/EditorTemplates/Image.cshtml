@@ -1,0 +1,29 @@
+﻿@model string
+
+
+<div style="width: 280px">
+    @if (!string.IsNullOrEmpty(Model))
+    {
+        <img id="img@((ViewData.ModelMetadata).PropertyName)" src="@Model" border="0" width="280" style="margin-bottom:5px" />
+    }
+    else
+    { 
+        <img id="img@((ViewData.ModelMetadata).PropertyName)" src="http://via.placeholder.com/350x150" border="0" width="280" style="margin-bottom:5px" />
+    }
+    <br />
+    <span class="btn btn-success fileremove-button" onclick="removeFile('@((ViewData.ModelMetadata).PropertyName)');">
+        Elimina...
+    </span>
+    <span class="btn btn-success fileinput-button">
+        <i class="glyphicon glyphicon-plus"></i>
+        <span>Carica...</span>
+        <!-- The file input field used as target for the file upload widget -->
+        <input id="fileupload@((ViewData.ModelMetadata).PropertyName)" class="fileupload" type="file" name="files[]" multiple data-id="@((ViewData.ModelMetadata).PropertyName)">
+    </span>
+    <br /><br />
+    <!-- The global progress bar -->
+    <div id="progress" class="progress">
+        <div id="pb@((ViewData.ModelMetadata).PropertyName)" class="progress-bar progress-bar-success"></div>
+    </div>
+    @Html.Hidden(string.Empty, Model)
+</div>

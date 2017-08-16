@@ -1,24 +1,110 @@
 ﻿body {
-    padding-top: 50px;
-    padding-bottom: 20px;
+    /*background-color:yellow;*/
+    padding-top:70px;
+    font-size:14px;
 }
 
-/* Set padding to keep content from hitting the edges */
-.body-content {
-    padding-left: 15px;
-    padding-right: 15px;
+/*.navbar {
+    margin-bottom:0px;
+    padding:30px 15px;
 }
 
-/* Override the default bootstrap behavior where horizontal description lists 
-   will truncate terms that are too long to fit in the left column 
-*/
-.dl-horizontal dt {
-    white-space: normal;
+.navbar img {
+    width:20%;
+    height: auto;
+}*/
+
+footer {
+    background-color:#333;
+    color:#ddd;
+    padding:20px;
+    text-align:center;
+    margin-top:20px;
 }
 
-/* Set width on the form input elements since they're 100% wide by default */
-input,
-select,
-textarea {
-    max-width: 280px;
+.fill-screen {
+    background-size:cover;
+    background-position: center;   
+    position:relative;
+}
+
+.c-fill{width:100%;height:100%;background-position:center;background-size:cover;}
+
+.row {
+margin:0px;
+
+}
+
+/*.fill-screen img {
+    width:100%;
+}*/
+
+.fill-screen-content {
+    position:absolute;
+    bottom:0px;
+    padding-bottom:20px;
+    text-align:center;
+    width:100%;
+    background-color:rgba(0,0,0,0.5);
+    color:#fff;
+}
+
+/*.fill-screen-content a {
+    color:#fff;
+}
+.fill-screen-content a:hover {
+    color:yellow;
+}*/
+
+/*.filler {
+    min-height:300px;
+    
+}*/
+
+/*@media (max-width:400px) {
+    navbar-header {
+        position: relative;    
+    }
+
+    .navbar img {
+        position:absolute;
+        top:0;
+        bottom:0;
+        margin:auto;
+        width:10%;
+    }
+
+}*/
+
+/*.carousel {
+    margin: 40px 0px;
+}
+
+.carousel img{
+    width:100%;
+    height:auto;
+}*/
+
+.navbar img {
+   
+}
+.navbar {
+    padding:0px 15px;
+}
+
+.team p{
+    text-align:center;
+}
+
+.team img {
+    width:32px;
+    height:32px;
+}
+
+.btn-xs .badge {
+    font-size:10px;
+}
+
+.input-group .form-control-inline {
+    width:50px;
 }

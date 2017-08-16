@@ -1,0 +1,3 @@
+@model TimeSpan
+
+@Html.TextBox("", new DateTime(Model.Ticks).ToString("HH:mm tt"), new { @class = "timepicker form-control", @maxlength = "8" })

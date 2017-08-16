@@ -1,0 +1,79 @@
+﻿@model IEnumerable<acroyoga.it.Models.Event>
+@{
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+    ViewBag.Title = "Events";
+}
+
+
+<div class="container-fluid">
+    <div class="row">
+        <h2>Eventi</h2>
+        <p>
+            @Html.ActionLink("Create New", "EventDetail")
+        </p>
+        <table class="table">
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Title)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.ImageLeft)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.ImageRight)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Video)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.DataInizio)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.DataFine)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.IsActive)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.CreateDate)
+                </th>
+                <th></th>
+            </tr>
+
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Title)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ImageLeft)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ImageRight)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Video)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.DataInizio)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.DataFine)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.IsActive)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.CreateDate)
+                    </td>
+                    <td style="width:80px">
+                        <a href="@Url.Action("EventDetail", new { id = item.EventId })" class="btn btn-default btn-xs"><span class='glyphicon glyphicon-pencil' aria-hidden='true'></span></a>
+                        <a href="@Url.Action("EventDelete", new { id = item.EventId })" class="btn btn-default btn-xs"><span class='glyphicon glyphicon-trash' aria-hidden='true'></span></a>
+                    </td>
+                </tr>
+            }
+
+        </table>
+    </div>
+</div>
