@@ -59,6 +59,11 @@ namespace acroyoga.it.Controllers
             return View();
         }
 
+        public ActionResult AcroYogaRagazzi()
+        {
+            return View();
+        }
+
         public ActionResult Yoga()
         {
             return View();
